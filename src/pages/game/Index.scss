@@ -1,0 +1,25 @@
+#Carousel{
+    background: #fff;
+}
+#FlashGame{
+    text-align: center;
+    padding: 15px 6px;
+    margin: 1.36vh 0;
+    background: #fff;
+    h3{
+        padding-bottom: 18px;
+    }
+    p.title{
+        padding: 10px 0;
+    }
+    img{
+        height: 7.49vh;
+        width: 13.3vw;
+    }
+    .am-flexbox-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
