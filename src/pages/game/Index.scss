@@ -1,25 +1,75 @@
-#Carousel{
+@import 'src/assets/css/comm';
+
+#Carousel {
     background: #fff;
 }
-#FlashGame{
+
+#FlashGame {
     text-align: center;
-    padding: 15px 6px;
+    padding: pxTovh(15) pxTovw(6);
     margin: 1.36vh 0;
     background: #fff;
-    h3{
-        padding-bottom: 18px;
+
+    h3 {
+        padding-bottom: pxTovh(18);
     }
-    p.title{
-        padding: 10px 0;
+
+    p.name {
+        padding: pxTovh(10) 0;
     }
-    img{
-        height: 7.49vh;
-        width: 13.3vw;
+
+    img {
+        height: 8vh;
+        width: 14vw;
     }
-    .am-flexbox-item{
+
+    .am-flexbox-item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+}
+
+#HotGame {
+    text-align: center;
+    padding: pxTovh(15) pxTovh(14);
+    margin: 1.36vh 0;
+    background: #fff;
+
+    h3 {
+        padding-bottom: pxTovh(18);
+    }
+
+    ul {
+        li {
+            display: flex;
+            padding: pxTovh(8) 0px;
+
+            img {
+                height: 7.49vh;
+                width: 13.3vw;
+            }
+
+            .game-introduce {
+                display: flex;
+                flex-grow: 1;
+                justify-content: space-between;
+                border-bottom: 1px solid #f0f0f0;
+                padding: pxTovh(5) 0 pxTovh(10) 0;
+                margin-left: pxTovw(12);
+
+                .text {
+                    text-align: left;
+
+                    p.introduce {
+                        font-size: pxTovw(12);
+                        color: #8f8f8f;
+                        padding-top: pxTovh(15);
+                    }
+                }
+            }
+        }
+    }
+
 }

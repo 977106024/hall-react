@@ -13,22 +13,22 @@ export default class FlashGame extends React.Component {
                 <Flex justify="center">
                     <Flex.Item>
                         <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
-                        <p className="title">十三张</p>
+                        <p className="name">十三张</p>
                         <Button type="primary" size="small">开始玩</Button>
                     </Flex.Item>
                     <Flex.Item>
                         <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
-                        <p className="title">十三张</p>
+                        <p className="name">十三张</p>
                         <Button type="primary" size="small">开始玩</Button>
                     </Flex.Item>
                     <Flex.Item>
                         <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
-                        <p className="title">十三张</p>
+                        <p className="name">十三张</p>
                         <Button type="primary" size="small">开始玩</Button>
                     </Flex.Item>
                     <Flex.Item justify="center">
                         <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
-                        <p className="title">十三张</p>
+                        <p className="name">十三张</p>
                         <Button type="primary" size="small">开始玩</Button>
                     </Flex.Item>
                 </Flex>

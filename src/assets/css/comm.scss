@@ -1,0 +1,13 @@
+// vw 单位转换
+@function pxTovw($px){
+
+    @return ($px/3.75)+vw;
+
+}
+
+//vh 单位转换
+@function pxTovh($px){
+
+    @return ($px/6.67)+vh;
+
+}
