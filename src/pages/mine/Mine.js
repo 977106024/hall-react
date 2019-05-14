@@ -1,7 +1,7 @@
 import React from 'react'
-import './index.css'
+import './Index.css'
 
-export default class Mine extends React.component{
+export default class Mine extends React.Component{
     constructor(props){
       super(props)
     }
@@ -9,7 +9,7 @@ export default class Mine extends React.component{
     render(){
       return(
         <div>
-
+            233333
         </div>
       )
     }

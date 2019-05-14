@@ -6,11 +6,17 @@ import App from './pages/game/Game';
 import TabBar from './components/TabBar/TabBar'
 import * as serviceWorker from './serviceWorker';
 
+import {BrowserRouter as Router} from 'react-router-dom'
+import AppRouter from './router/router'
 
-ReactDOM.render(<div id="page">
-    <App />
-    <TabBar/>
-    </div>, document.getElementById('root'));
+
+ReactDOM.render(
+    <Router>
+        <div id="page">
+            <AppRouter />
+            <TabBar/>
+        </div>
+    </Router>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
