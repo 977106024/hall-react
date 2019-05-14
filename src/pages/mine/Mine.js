@@ -8,8 +8,9 @@ export default class Mine extends React.Component{
 
     render(){
       return(
-        <div>
-            233333
+        <div id="Mine">
+            <h3>888888888888888</h3>
+            <h1>这是Mine页面</h1>
         </div>
       )
     }
