@@ -13,6 +13,21 @@ class TabBarCom extends React.Component {
         };
     }
 
+    componentDidMount() {
+        //通过路由来选中TabBar
+        let pathname = this.props.location.pathname
+        console.log(pathname)
+        if(pathname === '/'){
+            this.setState({
+                selectedTab:'game'
+            })
+        }else if(pathname === '/mine'){
+            this.setState({
+                selectedTab:'mine'
+            })
+        }
+    }
+
     renderContent(pageText) {
 
     }
