@@ -9,7 +9,9 @@ export default class Order extends React.Component{
     render(){
         return (
             <section id="Order">
-                <TabsCom />
+                <TabsCom>
+                    <h1>xxxx</h1>
+                </TabsCom>
             </section>
         )
     }
