@@ -1,5 +1,6 @@
 import React from 'react'
 
+//header userInfo
 export default class Header extends React.Component{
     constructor(props){
         super(props)

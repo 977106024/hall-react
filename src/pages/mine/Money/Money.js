@@ -1,5 +1,6 @@
 import React from 'react'
 
+//充值余额 房卡 积分
 export default class Money extends React.Component{
     constructor(props){
         super(props)

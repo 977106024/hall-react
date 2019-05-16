@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from 'antd-mobile';
 
+// 热门游戏
 export default class HotGame extends React.Component {
     constructor(props) {
         super(props)

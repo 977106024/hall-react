@@ -1,6 +1,7 @@
 import React from 'react'
 import { Flex, Button } from 'antd-mobile';
 
+//精选游戏
 export default class FlashGame extends React.Component {
     constructor(props) {
         super(props)
