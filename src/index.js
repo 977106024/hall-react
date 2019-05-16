@@ -2,11 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'antd-mobile/dist/antd-mobile.css';  // or 'antd-mobile/dist/antd-mobile.less'
-import App from './pages/game/Game';
-import TabBar from './components/TabBar/TabBar'
+import TabBarCom from './components/TabBar/TabBar'
 import * as serviceWorker from './serviceWorker';
 
-import { HashRouter } from 'react-router-dom';
 import {BrowserRouter as Router} from 'react-router-dom'
 import AppRouter from './router/router'
 
@@ -15,7 +13,7 @@ ReactDOM.render(
     <Router>
         <div id="page">
             <AppRouter />
-            <TabBar/>
+            <TabBarCom />
         </div>
     </Router>, document.getElementById('root'));
 

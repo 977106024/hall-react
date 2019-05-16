@@ -1,9 +1,9 @@
 import React from 'react'
 import './Carousel.css'
-import { Carousel as CarouselCom, WingBlank } from 'antd-mobile';
+import { Carousel} from 'antd-mobile';
 
 
-export default class Carousel extends React.Component {
+export default class CarouselCom extends React.Component {
     state = {
         data: ['1', '2', '3'],
         imgHeight: 176,
@@ -21,7 +21,7 @@ export default class Carousel extends React.Component {
     render() {
         return (
             <section id="Carousel">
-                <CarouselCom
+                <Carousel
                     autoplay={false}
                     infinite
                     beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
@@ -46,7 +46,7 @@ export default class Carousel extends React.Component {
                             />
                         </a>
                     ))}
-                </CarouselCom>
+                </Carousel>
             </section>
         )
     }

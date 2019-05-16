@@ -1,9 +1,9 @@
 import React from 'react'
 import './TabBar.css'
-import { TabBar as TabBarCom } from 'antd-mobile';
+import { TabBar} from 'antd-mobile';
 import { withRouter } from 'react-router-dom'
 
-class TabBar extends React.Component {
+class TabBarCom extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -20,13 +20,13 @@ class TabBar extends React.Component {
     render() {
         return (
             <section id="TabBar">
-                <TabBarCom
+                <TabBar
                     unselectedTintColor="#949494"
                     tintColor="#33A3F4"
                     barTintColor="white"
                     hidden={this.state.hidden}
                 >
-                        <TabBarCom.Item
+                        <TabBar.Item
                             title="游戏"
                             key="game"
                             icon={<div style={{
@@ -53,8 +53,8 @@ class TabBar extends React.Component {
                             data-seed="logId"
                         >
                             {/* {this.renderContent('game')} */}
-                        </TabBarCom.Item>
-                        <TabBarCom.Item
+                        </TabBar.Item>
+                        <TabBar.Item
                             icon={
                                 <div style={{
                                     width: '22px',
@@ -83,11 +83,11 @@ class TabBar extends React.Component {
                             data-seed="logId1"
                         >
                             {/* {this.renderContent('mine')} */}
-                        </TabBarCom.Item>
-                </TabBarCom>
+                        </TabBar.Item>
+                </TabBar>
             </section>
         )
     }
 }
 
-export default withRouter(TabBar)
+export default withRouter(TabBarCom)

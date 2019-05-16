@@ -37,7 +37,7 @@
         margin: 0 pxTovw(15);
         margin-top: pxTovh(-35);
         background: #fff;
-        border-radius: pxTovw(15);
+        border-radius: pxTovw(10);
         display: flex;
         &>div{
             flex-grow: 1;
@@ -48,4 +48,16 @@
             padding-bottom: pxTovh(5);
         }
     }
+
+    section#Order{
+        margin: 0 pxTovw(15);
+        margin-top: pxTovh(10);
+        background: #fff;
+        border-radius: pxTovw(10);
+        .am-tabs{
+            border-radius: pxTovw(10);
+        }
+    }
 }
+
+
