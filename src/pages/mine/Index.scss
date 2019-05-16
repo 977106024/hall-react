@@ -1,0 +1,51 @@
+@import 'src/assets/css/comm';
+
+#Mine{
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #373a41;
+        padding: pxTovw(15) pxTovh(10);
+        padding-bottom: pxTovh(60);
+        .user-info{
+            display: flex;
+            align-items: center;
+            img{
+                height: pxTovh(60);
+                width: pxTovw(60);
+                border-radius: pxTovw(50);
+            }
+            .name-id{
+                color: #fff;
+                line-height: 1.5;
+                margin-left: pxTovw(10);
+                .name{
+                    font-size: pxTovw(16);
+                }
+                .id{
+                    opacity: .7;
+                }
+            }
+        }
+        .chat{
+            color: #fff;
+        }
+    }
+    section#Money{
+        padding: pxTovh(20) pxTovw(15);
+        margin: 0 pxTovw(15);
+        margin-top: pxTovh(-35);
+        background: #fff;
+        border-radius: pxTovw(15);
+        display: flex;
+        &>div{
+            flex-grow: 1;
+            text-align: center;
+        }
+        .num{
+            font-weight: 700;
+            padding-bottom: pxTovh(5);
+        }
+    }
+}

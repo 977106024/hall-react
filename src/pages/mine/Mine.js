@@ -1,5 +1,7 @@
 import React from 'react'
-import './Index.css'
+import './Index.scss'
+import Header from './Header/Header'
+import Money from './Money/Money'
 
 export default class Mine extends React.Component{
     constructor(props){
@@ -8,10 +10,11 @@ export default class Mine extends React.Component{
 
     render(){
       return(
-        <div id="Mine">
-            <h3>888888888888888</h3>
-            <h1>这是Mine页面</h1>
-        </div>
+        <section id="Mine">
+           <Header />
+           <Money />
+
+        </section>
       )
     }
 }
