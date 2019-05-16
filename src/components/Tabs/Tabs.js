@@ -15,12 +15,11 @@ export default class TabsCom extends React.Component {
         return (
             <section id="Order">
                 <Tabs tabs={tabs} initialPage={0} animated={false} useOnPan={false} tabBarUnderlineStyle={{width: '25%',marginLeft:'12.5%'}}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100px', backgroundColor: '#fff' }}>
-                        {this.props.children}
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100px', backgroundColor: '#fff' }}>
-                        Content of second tab
-                    </div>
+                    {React.Children.map(this.props.children,(child, i)=>{
+                        return (<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100px', backgroundColor: '#fff' }}>
+                                {child}
+                        </div>)
+                    })}
                 </Tabs>
             </section>
         )
