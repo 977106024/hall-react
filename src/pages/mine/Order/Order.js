@@ -6,22 +6,22 @@ function OnLine(){
     return (
         <ul className="tabs-content">
             <li>
-                <svg className="icon" aria-hidden="true">
+                <svg className="icon svg-order" aria-hidden="true">
                     <use xlinkHref="#icon-dailingqu"></use>
                 </svg>
-                待发货
+                <p>待发货</p>
             </li>
             <li>
-                <svg className="icon" aria-hidden="true">
-                    <use xlinkHref="#icon-dailingqu"></use>
+                <svg className="icon svg-order" aria-hidden="true">
+                    <use xlinkHref="#icon-yunshuzhong"></use>
                 </svg>
-                运输中
+                <p>运输中</p>
             </li>
             <li>
-                <svg className="icon" aria-hidden="true">
-                    <use xlinkHref="#icon-dailingqu"></use>
+                <svg className="icon svg-order" aria-hidden="true">
+                    <use xlinkHref="#icon-yilingqu"></use>
                 </svg>
-                已领取
+                <p>已领取</p>
             </li>
         </ul>
     )
@@ -32,22 +32,22 @@ function UnderLine(){
     return (
         <ul className="tabs-content">
             <li>
-                <svg className="icon" aria-hidden="true">
+                <svg className="icon svg-order" aria-hidden="true">
                     <use xlinkHref="#icon-dailingqu"></use>
                 </svg>
-                待发货2
+                <p>待发货2</p>
             </li>
             <li>
-                <svg className="icon" aria-hidden="true">
-                    <use xlinkHref="#icon-dailingqu"></use>
+                <svg className="icon svg-order" aria-hidden="true">
+                    <use xlinkHref="#icon-yunshuzhong"></use>
                 </svg>
-                运输中2
+                <p>运输中2</p>
             </li>
             <li>
-                <svg className="icon" aria-hidden="true">
-                    <use xlinkHref="#icon-dailingqu"></use>
+                <svg className="icon svg-order" aria-hidden="true">
+                    <use xlinkHref="#icon-yilingqu"></use>
                 </svg>
-                已领取2
+                <p>已领取2</p>
             </li>
         </ul>
     )

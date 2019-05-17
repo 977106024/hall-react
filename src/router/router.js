@@ -12,10 +12,10 @@ export default class AppRouter extends React.Component {
 
     render(){
         return (
-            <div>
+            <section id="page">
                 <Route exact path="/" component={Game}/>
                 <Route exact path="/mine" component={Mine}/>
-            </div>
+            </section>
         )
     }
 }

@@ -34,7 +34,7 @@ class TabBarCom extends React.Component {
 
     render() {
         return (
-            <section id="TabBar">
+            <footer id="TabBar">
                 <TabBar
                     unselectedTintColor="#949494"
                     tintColor="#33A3F4"
@@ -100,7 +100,7 @@ class TabBarCom extends React.Component {
                             {/* {this.renderContent('mine')} */}
                         </TabBar.Item>
                 </TabBar>
-            </section>
+            </footer>
         )
     }
 }

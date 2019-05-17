@@ -13,7 +13,6 @@ export default class TabsCom extends React.Component {
 
     render(){
         return (
-            <section id="Order">
                 <Tabs tabs={tabs} initialPage={0} animated={false} useOnPan={false} tabBarUnderlineStyle={{width: '25%',marginLeft:'12.5%'}}>
                     {React.Children.map(this.props.children,(child, i)=>{
                         return (<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100px', backgroundColor: '#fff' }}>
@@ -21,7 +20,6 @@ export default class TabsCom extends React.Component {
                         </div>)
                     })}
                 </Tabs>
-            </section>
         )
     }
 }

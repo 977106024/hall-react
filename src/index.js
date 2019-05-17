@@ -11,10 +11,8 @@ import AppRouter from './router/router'
 
 ReactDOM.render(
     <Router>
-        <div id="page">
-            <AppRouter />
-            <TabBarCom />
-        </div>
+        <AppRouter />
+        <TabBarCom />
     </Router>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
