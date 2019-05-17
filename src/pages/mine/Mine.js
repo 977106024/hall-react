@@ -3,6 +3,7 @@ import './Index.scss'
 import Header from './Header/Header'
 import Money from './Money/Money'
 import Order from './Order/Order'
+import NavList from './NavList/NavList'
 
 // 我的页面
 export default class Mine extends React.Component{
@@ -16,6 +17,7 @@ export default class Mine extends React.Component{
            <Header />
            <Money />
            <Order />
+           <NavList />
         </section>
       )
     }
