@@ -13,7 +13,7 @@ export default class FlashGame extends React.Component {
                 <h3>精选游戏</h3>
                 <Flex justify="center">
                     <Flex.Item>
-                        <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
+                        <img src="https://img.xuewuzhijing.top/game/pg.jpg" alt="" />
                         <p className="name">苹果的诱惑</p>
                         <a href="https://xuewuzhijing.top/littleGame/pgdyh/">
                             <Button type="primary" size="small">开始玩</Button>
