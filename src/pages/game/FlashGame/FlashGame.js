@@ -50,9 +50,7 @@ export default class FlashGame extends React.Component {
                             <Flex.Item key={val.id}>
                                 <img src={val.img} alt=""/>
                                 <p className="name">{val.name}</p>
-                                {/*<a href={val.url}>*/}
                                 <Button type="primary" size="small" onClick={this.goGame.bind(this,val.url)}>开始玩</Button>
-                                {/*</a>*/}
                             </Flex.Item>
                         ))
                     }
