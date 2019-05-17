@@ -25,3 +25,6 @@ ul,li{
   fill: currentColor;
   overflow: hidden;
 }
+#page{
+  padding-bottom: 6.4vh;
+}
