@@ -47,14 +47,14 @@ class TabBarCom extends React.Component {
                             icon={<div style={{
                                 width: '22px',
                                 height: '22px',
-                                background: 'url(https://zos.alipayobjects.com/rmsportal/sifuoDUQdAFKAVcFGROC.svg) center center /  21px 21px no-repeat'
+                                background: 'url(https://img.xuewuzhijing.top/game.svg) center center /  21px 21px no-repeat'
                             }}
                             />
                             }
                             selectedIcon={<div style={{
                                 width: '22px',
                                 height: '22px',
-                                background: 'url(https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg) center center /  21px 21px no-repeat'
+                                background: 'url(https://img.xuewuzhijing.top/game-room2.svg) center center /  21px 21px no-repeat'
                             }}
                             />
                             }
@@ -74,7 +74,7 @@ class TabBarCom extends React.Component {
                                 <div style={{
                                     width: '22px',
                                     height: '22px',
-                                    background: 'url(https://gw.alipayobjects.com/zos/rmsportal/BTSsmHkPsQSPTktcXyTV.svg) center center /  21px 21px no-repeat'
+                                    background: 'url(https://img.xuewuzhijing.top/mine-tabbar.svg) center center /  21px 21px no-repeat'
                                 }}
                                 />
                             }
@@ -82,7 +82,7 @@ class TabBarCom extends React.Component {
                                 <div style={{
                                     width: '22px',
                                     height: '22px',
-                                    background: 'url(https://gw.alipayobjects.com/zos/rmsportal/ekLecvKBnRazVLXbWOnE.svg) center center /  21px 21px no-repeat'
+                                    background: 'url(https://img.xuewuzhijing.top/mine-active2.svg) center center /  21px 21px no-repeat'
                                 }}
                                 />
                             }

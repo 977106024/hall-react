@@ -5,7 +5,8 @@ import { Carousel} from 'antd-mobile';
 
 export default class CarouselCom extends React.Component {
     state = {
-        data: ['1', '2', '3'],
+        data: ['', '', '',''],
+        format:['jpg','gif','jpg','gif'],
         imgHeight: 176,
       }
 
@@ -13,7 +14,7 @@ export default class CarouselCom extends React.Component {
         // simulate img loading
         setTimeout(() => {
           this.setState({
-            data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
+            data: ['1', '2', '3','4'],
           });
         }, 100);
       }
@@ -28,14 +29,14 @@ export default class CarouselCom extends React.Component {
                     afterChange={index => console.log('slide to', index)}
                     autoplay={true}
                 >
-                    {this.state.data.map(val => (
+                    {this.state.data.map((val,i) => (
                         <a
                             key={val}
                             href="http://www.alipay.com"
                             style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
                         >
                             <img
-                                src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+                                src={`https://img.xuewuzhijing.top/Carousel/${val}.${this.state.format[i]}`}
                                 alt=""
                                 style={{ width: '100%', verticalAlign: 'top' }}
                                 onLoad={() => {
