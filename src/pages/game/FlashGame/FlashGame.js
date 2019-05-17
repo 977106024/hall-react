@@ -1,10 +1,43 @@
 import React from 'react'
-import { Flex, Button } from 'antd-mobile';
+import {Flex, Button} from 'antd-mobile';
 
 //精选游戏
 export default class FlashGame extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {
+            data: [
+                {
+                    id:1,
+                    name: "苹果的诱惑",
+                    img: "https://img.xuewuzhijing.top/game/pg.jpg",
+                    url: "https://xuewuzhijing.top/littleGame/pgdyh/"
+                },
+                {
+                    d:2,
+                    name: "打泡泡",
+                    img: "https://xuewuzhijing.top/littleGame/dppM/res/share.png",
+                    url: "https://xuewuzhijing.top/littleGame/dppM/"
+                },
+                {
+                    id:3,
+                    name:"十三张",
+                    img:"https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png",
+                    url:""
+                },
+                {
+                    id:4,
+                    name:"十三张",
+                    img:"https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png",
+                    url:""
+                }
+            ]
+        }
+    }
+
+    //跳转游戏
+    goGame(url){
+        window.location.href = url
     }
 
     render() {
@@ -12,54 +45,18 @@ export default class FlashGame extends React.Component {
             <section id="FlashGame">
                 <h3>精选游戏</h3>
                 <Flex justify="center">
-                    <Flex.Item>
-                        <img src="https://img.xuewuzhijing.top/game/pg.jpg" alt="" />
-                        <p className="name">苹果的诱惑</p>
-                        <a href="https://xuewuzhijing.top/littleGame/pgdyh/">
-                            <Button type="primary" size="small">开始玩</Button>
-                        </a>
-                    </Flex.Item>
-                    <Flex.Item>
-                        <img src="https://xuewuzhijing.top/littleGame/dppM/res/share.png" alt="" />
-                        <p className="name">打泡泡</p>
-                        <a href="https://xuewuzhijing.top/littleGame/dppM/">
-                            <Button type="primary" size="small">开始玩</Button>
-                        </a>
-                    </Flex.Item>
-                    <Flex.Item>
-                        <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
-                        <p className="name">十三张</p>
-                        <Button type="primary" size="small">开始玩</Button>
-                    </Flex.Item>
-                    <Flex.Item justify="center">
-                        <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
-                        <p className="name">十三张</p>
-                        <Button type="primary" size="small">开始玩</Button>
-                    </Flex.Item>
+                    {
+                        this.state.data.map(val => (
+                            <Flex.Item key={val.id}>
+                                <img src={val.img} alt=""/>
+                                <p className="name">{val.name}</p>
+                                {/*<a href={val.url}>*/}
+                                <Button type="primary" size="small" onClick={this.goGame.bind(this,val.url)}>开始玩</Button>
+                                {/*</a>*/}
+                            </Flex.Item>
+                        ))
+                    }
                 </Flex>
-                {/* <h3>精选游戏</h3>
-                <ul>
-                    <li>
-                        <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
-                        <p>十三张</p>
-                        <button>开始游戏</button>
-                    </li>
-                    <li>
-                        <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
-                        <p>十三张</p>
-                        <button>开始游戏</button>
-                    </li>
-                    <li>
-                        <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
-                        <p>十三张</p>
-                        <button>开始游戏</button>
-                    </li>
-                    <li>
-                        <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
-                        <p>十三张</p>
-                        <button>开始游戏</button>
-                    </li>
-                </ul> */}
             </section>
         )
     }

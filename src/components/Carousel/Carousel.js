@@ -5,7 +5,7 @@ import { Carousel} from 'antd-mobile';
 
 export default class CarouselCom extends React.Component {
     state = {
-        data: ['', '', '',''],
+        data: ['1', '2', '3','4'],
         format:['jpg','gif','jpg','gif'],
         imgHeight: 176,
       }
@@ -25,13 +25,13 @@ export default class CarouselCom extends React.Component {
                 <Carousel
                     autoplay={false}
                     infinite
-                    beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-                    afterChange={index => console.log('slide to', index)}
+                    beforeChange={(from, to) => console.log()}
+                    afterChange={index => console.log()}
                     autoplay={true}
                 >
                     {this.state.data.map((val,i) => (
                         <a
-                            key={val}
+                            key={i}
                             href="http://www.alipay.com"
                             style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
                         >
