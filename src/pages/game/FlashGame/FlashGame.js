@@ -20,9 +20,11 @@ export default class FlashGame extends React.Component {
                         </a>
                     </Flex.Item>
                     <Flex.Item>
-                        <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
-                        <p className="name">十三张</p>
-                        <Button type="primary" size="small">开始玩</Button>
+                        <img src="https://xuewuzhijing.top/littleGame/dppM/res/share.png" alt="" />
+                        <p className="name">打泡泡</p>
+                        <a href="https://xuewuzhijing.top/littleGame/dppM/">
+                            <Button type="primary" size="small">开始玩</Button>
+                        </a>
                     </Flex.Item>
                     <Flex.Item>
                         <img src="https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png" alt="" />
