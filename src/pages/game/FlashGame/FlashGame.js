@@ -14,7 +14,7 @@ export default class FlashGame extends React.Component {
                     url: "https://xuewuzhijing.top/littleGame/pgdyh/"
                 },
                 {
-                    d: 2,
+                    id: 2,
                     name: "打泡泡",
                     img: "https://xuewuzhijing.top/littleGame/dppM/res/share.png",
                     url: "https://xuewuzhijing.top/littleGame/dppM/"

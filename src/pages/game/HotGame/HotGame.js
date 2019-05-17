@@ -19,19 +19,19 @@ export default class HotGame extends React.Component {
                 gameIcon: "https://img.fphdcdn.com/member/2019-03-11am8SYiYfEY.png"
             },
             {
-                id: 2,
+                id: 3,
                 name: "广西玉林麻将",
                 introduce: "经典地方棋牌，真人实时对战。",
                 gameIcon: "https://img.fphdcdn.com/member/2019-03-11am8SYiYfEY.png"
             },
             {
-                id: 2,
+                id: 4,
                 name: "广西玉林麻将",
                 introduce: "经典地方棋牌，真人实时对战。",
                 gameIcon: "https://img.fphdcdn.com/member/2019-03-11am8SYiYfEY.png"
             },
             {
-                id: 2,
+                id: 5,
                 name: "广西玉林麻将",
                 introduce: "经典地方棋牌，真人实时对战。",
                 gameIcon: "https://img.fphdcdn.com/member/2019-03-11am8SYiYfEY.png"
