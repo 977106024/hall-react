@@ -8,35 +8,35 @@ export default class FlashGame extends React.Component {
         this.state = {
             data: [
                 {
-                    id:1,
+                    id: 1,
                     name: "苹果的诱惑",
                     img: "https://img.xuewuzhijing.top/game/pg.jpg",
                     url: "https://xuewuzhijing.top/littleGame/pgdyh/"
                 },
                 {
-                    d:2,
+                    d: 2,
                     name: "打泡泡",
                     img: "https://xuewuzhijing.top/littleGame/dppM/res/share.png",
                     url: "https://xuewuzhijing.top/littleGame/dppM/"
                 },
                 {
-                    id:3,
-                    name:"十三张",
-                    img:"https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png",
-                    url:""
+                    id: 3,
+                    name: "十三张",
+                    img: "https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png",
+                    url: ""
                 },
                 {
-                    id:4,
-                    name:"十三张",
-                    img:"https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png",
-                    url:""
+                    id: 4,
+                    name: "十三张",
+                    img: "https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png",
+                    url: ""
                 }
             ]
         }
     }
 
     //跳转游戏
-    goGame(url){
+    goGame(url) {
         window.location.href = url
     }
 
@@ -50,7 +50,8 @@ export default class FlashGame extends React.Component {
                             <Flex.Item key={val.id}>
                                 <img src={val.img} alt=""/>
                                 <p className="name">{val.name}</p>
-                                <Button type="primary" size="small" onClick={this.goGame.bind(this,val.url)}>开始玩</Button>
+                                <Button type="primary" size="small"
+                                        onClick={this.goGame.bind(this, val.url)}>开始玩</Button>
                             </Flex.Item>
                         ))
                     }
