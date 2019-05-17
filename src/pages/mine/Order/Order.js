@@ -5,9 +5,24 @@ import TabsCom from '@/components/Tabs/Tabs'
 function OnLine(){
     return (
         <ul className="tabs-content">
-            <li>待发货</li>
-            <li>运输中</li>
-            <li>已领取</li>
+            <li>
+                <svg className="icon" aria-hidden="true">
+                    <use xlinkHref="#icon-dailingqu"></use>
+                </svg>
+                待发货
+            </li>
+            <li>
+                <svg className="icon" aria-hidden="true">
+                    <use xlinkHref="#icon-dailingqu"></use>
+                </svg>
+                运输中
+            </li>
+            <li>
+                <svg className="icon" aria-hidden="true">
+                    <use xlinkHref="#icon-dailingqu"></use>
+                </svg>
+                已领取
+            </li>
         </ul>
     )
 }
@@ -16,9 +31,24 @@ function OnLine(){
 function UnderLine(){
     return (
         <ul className="tabs-content">
-            <li>待发货2</li>
-            <li>运输中2</li>
-            <li>已领取2</li>
+            <li>
+                <svg className="icon" aria-hidden="true">
+                    <use xlinkHref="#icon-dailingqu"></use>
+                </svg>
+                待发货2
+            </li>
+            <li>
+                <svg className="icon" aria-hidden="true">
+                    <use xlinkHref="#icon-dailingqu"></use>
+                </svg>
+                运输中2
+            </li>
+            <li>
+                <svg className="icon" aria-hidden="true">
+                    <use xlinkHref="#icon-dailingqu"></use>
+                </svg>
+                已领取2
+            </li>
         </ul>
     )
 }
