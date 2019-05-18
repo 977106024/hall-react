@@ -21,9 +21,9 @@ export default class FlashGame extends React.Component {
                 },
                 {
                     id: 3,
-                    name: "十三张",
-                    img: "https://img.fphdcdn.com/member/2018-09-26rsNYrw2epZ.png",
-                    url: ""
+                    name: "大球吃小球",
+                    img: "https://xuewuzhijing.top/littleGame/dycxy/share.png",
+                    url: "https://xuewuzhijing.top/littleGame/dycxy/dycxy.html"
                 },
                 {
                     id: 4,
