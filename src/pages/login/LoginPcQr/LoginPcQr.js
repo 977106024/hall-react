@@ -10,7 +10,7 @@ class LoginPcQr extends React.Component {
     }
 
     login() {
-        let data = {id: 9771}
+        let data = {id: 9771,uuid:'ceeb5200-7ca4-11e9-bb8b-9dc1abf980dd'}
         LoginPcConfirm(data).then(res => {
             let $res = res.data
             if ($res.code === 200 && $res.data === 'OK') {
