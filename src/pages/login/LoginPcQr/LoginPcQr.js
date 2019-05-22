@@ -1,18 +1,22 @@
 import React from 'react'
 import './LoginPcQr.scss'
 import {Button} from 'antd-mobile'
-import { Link } from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import {LoginPcConfirm} from '@/service/getData'
 
-export default class LoginPcQr extends React.Component {
+class LoginPcQr extends React.Component {
     constructor(props) {
         super(props)
     }
 
-    login(){
-        let data = {}
-        LoginPcConfirm(data).then(res=>{
-            console.log('登录')
+    login() {
+        let data = {id: 9771}
+        LoginPcConfirm(data).then(res => {
+            let $res = res.data
+            if ($res.code === 200 && $res.data === 'OK') {
+                //确认登陆后跳到首页
+                this.props.history.push('/')
+            }
         })
     }
 
@@ -33,3 +37,5 @@ export default class LoginPcQr extends React.Component {
         )
     }
 }
+
+export default withRouter(LoginPcQr)
