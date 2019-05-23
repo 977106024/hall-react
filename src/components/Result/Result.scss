@@ -1,0 +1,10 @@
+@import 'src/assets/css/comm';
+#Result {
+    .am-icon-md {
+        width: pxTovw(60);
+        height: pxTovh(60);
+    }
+    .am-result:after{
+        background-color:#fff;
+    }
+}
