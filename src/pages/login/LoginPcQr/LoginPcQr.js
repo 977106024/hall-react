@@ -10,7 +10,7 @@ class LoginPcQr extends React.Component {
         super(props)
         this.state = {
             uuid:"",
-            controller:false
+            controller:true
         }
     }
 
@@ -19,6 +19,8 @@ class LoginPcQr extends React.Component {
         let query = this.props.location.search
         let index = query.indexOf("=")
         let uuid = query.substr(index+1)
+
+        //url上没有uuid
         if(uuid === ""){
             this.state.controller = false
             return
@@ -28,14 +30,24 @@ class LoginPcQr extends React.Component {
         })
 
         const data = {
-            uuid:uuid,
+            openId:"9771",
+            uuid:'a9fc3f50-7d2a-11e9-995a-85c462aef50d',
             statusQr:true,
         }
         //通知后台已扫二维码
         scanningQr(data).then(res=>{
             let $res = res.data
-            if($res.code === 200){
-                console.log($res.data)
+            if($res.code === 200 && $res.data){
+                this.setState({
+                    //有权限的用户
+                    controller:true
+                })
+            }else{
+                this.setState({
+                    //没有权限的用户
+                    controller:false
+                })
+
             }
         })
     }
@@ -56,7 +68,7 @@ class LoginPcQr extends React.Component {
         let isController
         if(this.state.controller){
             isController = (
-                <div>
+                <div className="login-wrap">
                     <div className="title">
                         <svg className="icon svg-pc" aria-hidden="true">
                             <use xlinkHref="#icon-diannao"></use>

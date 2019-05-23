@@ -14,7 +14,7 @@ export default class ResultCom extends React.Component {
             <section id="Result">
                 <Result
                     img={myImg('https://gw.alipayobjects.com/zos/rmsportal/GIyMDJnuqmcqPLpHCSkj.svg')}
-                    title="您无权限！"
+                    title="您无权限!"
                     message="请向管理员申请admin管理权限"
                 />
             </section>
