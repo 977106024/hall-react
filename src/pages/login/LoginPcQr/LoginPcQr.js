@@ -2,15 +2,28 @@ import React from 'react'
 import './LoginPcQr.scss'
 import {Button} from 'antd-mobile'
 import {Link, withRouter} from 'react-router-dom'
-import {LoginPcConfirm} from '@/service/getData'
+import {LoginPcConfirm,scanningQr} from '@/service/getData'
 
 class LoginPcQr extends React.Component {
     constructor(props) {
         super(props)
     }
 
+    componentWillMount() {
+        const data = {
+            uuid:'4698afa0-7d09-11e9-a334-c1d9fae64189',
+            statusQr:true,
+        }
+        scanningQr(data).then(res=>{
+            let $res = res.data
+            if($res.code === 200){
+                console.log($res.data)
+            }
+        })
+    }
+
     login() {
-        let data = {id: 9771,uuid:'ceeb5200-7ca4-11e9-bb8b-9dc1abf980dd'}
+        let data = {id: 9771,uuid:'2c141ff0-7cfc-11e9-b7ca-2ffe0fdfdf28'}
         LoginPcConfirm(data).then(res => {
             let $res = res.data
             if ($res.code === 200 && $res.data === 'OK') {

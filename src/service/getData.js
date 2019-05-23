@@ -14,3 +14,14 @@ export const LoginPcConfirm = (param) => (
     })
 )
 
+/**
+ * 是否扫码
+ * @param uuid status
+ */
+export const scanningQr = (param) => (
+    axios({
+        method:"post",
+        url:`${APIURL}/hall/scanningQr`,
+        data:param
+    })
+)
