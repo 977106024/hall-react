@@ -7,13 +7,25 @@ import {LoginPcConfirm,scanningQr} from '@/service/getData'
 class LoginPcQr extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {
+            uuid:""
+        }
     }
 
     componentWillMount() {
+        //获取url上uuid
+        let query = this.props.location.search
+        let index = query.indexOf("=")
+        let uuid = query.substr(index+1)
+        this.setState({
+            uuid:uuid
+        })
+
         const data = {
-            uuid:'4698afa0-7d09-11e9-a334-c1d9fae64189',
+            uuid:uuid,
             statusQr:true,
         }
+        //通知后台已扫二维码
         scanningQr(data).then(res=>{
             let $res = res.data
             if($res.code === 200){
@@ -22,8 +34,9 @@ class LoginPcQr extends React.Component {
         })
     }
 
+    //确认登陆
     login() {
-        let data = {id: 9771,uuid:'2c141ff0-7cfc-11e9-b7ca-2ffe0fdfdf28'}
+        let data = {id: 9771,uuid:this.state.uuid}
         LoginPcConfirm(data).then(res => {
             let $res = res.data
             if ($res.code === 200 && $res.data === 'OK') {

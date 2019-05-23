@@ -5,15 +5,15 @@ import 'antd-mobile/dist/antd-mobile.css';  // or 'antd-mobile/dist/antd-mobile.
 import TabBarCom from './components/TabBar/TabBar'
 import * as serviceWorker from './serviceWorker';
 
-import {BrowserRouter as Router} from 'react-router-dom'
+import {HashRouter} from 'react-router-dom'
 import AppRouter from './router/router'
 
 
 ReactDOM.render(
-    <Router>
+    <HashRouter>
         <AppRouter/>
         <TabBarCom/>
-    </Router>, document.getElementById('root'));
+    </HashRouter>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

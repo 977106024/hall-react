@@ -10,6 +10,7 @@
 
 # production
 /build
+/hall
 
 # misc
 .DS_Store
