@@ -31,7 +31,7 @@ class LoginPcQr extends React.Component {
 
         const data = {
             openId:"9771",
-            uuid:'a9fc3f50-7d2a-11e9-995a-85c462aef50d',
+            uuid:uuid,
             statusQr:true,
         }
         //通知后台已扫二维码
